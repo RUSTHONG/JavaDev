@@ -25,7 +25,7 @@ class input {
         if (score >= 60) {
             System.out.println("pass");
         } else {
-            System.out.println("GG");
+            System.out.println("please call your parents");
         }
     }
 }
