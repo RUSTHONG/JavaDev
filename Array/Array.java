@@ -13,11 +13,11 @@
  * 声明初始化：
  *      int [] a = {1, 1, 12, 3}
  */
+import java.util.*;
+
 class Array {
     public static void main(String[] args) {
-        int [] array = {1, 1, 12, 3};
-        int maxElement = maxElement(array);
-        System.out.println(maxElement);
+        
         
     }
 
@@ -30,6 +30,27 @@ class Array {
             }
         }
         return max;
-            
     }
+
+    // 计算数组元素的平均值
+    public static double average(double[] a) {
+        int N = a.length;
+        double sum = 0.0;
+        for (int i = 0;i < N;i++) {
+            sum += a[i];
+        }
+        double average = sum/N;
+        return average;
+    }
+
+    // 复制数组
+    public static double duplicateArray(double[] a) {
+        int N = a.length;
+        double[] b = new double[N];
+        for (int i = 0; i < N; i++) {
+            b[i] = a[i];
+        }
+        return b;
+    }
+
 }
