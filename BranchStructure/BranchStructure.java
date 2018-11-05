@@ -27,7 +27,7 @@ class BranchStructure
     public static void main(String[] args)
     {
         //闰年条件：能被400整除，或者能被4整除但是不能被100整除
-        int year = 2006;
+        int year = 2016;
         if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
         {
             System.out.println("This is leapYear");
