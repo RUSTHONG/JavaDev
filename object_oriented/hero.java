@@ -1,4 +1,4 @@
-public class Hero
+class Hero
 {
     String name;
     float hp;

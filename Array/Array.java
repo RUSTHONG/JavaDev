@@ -13,12 +13,14 @@
  * 声明初始化：
  *      int [] a = {1, 1, 12, 3}
  */
+import java.util.*;
+import java.io.*;
+
 class Array {
     public static void main(String[] args) {
-        int [] array = {1, 1, 12, 3};
-        int maxElement = maxElement(array);
-        System.out.println(maxElement);
-        
+        double[] a = {1.2 , 1.3, 2.2, 3.0, 5.0, 8.0};
+        double[] result = duplicateArray(a);
+        System.out.printf(Arrays.toString(result));       
     }
 
     //找出数组中最大的元素
@@ -30,6 +32,26 @@ class Array {
             }
         }
         return max;
-            
+    }
+
+    // 计算数组元素的平均值
+    public static double average(double[] a) {
+        int N = a.length;
+        double sum = 0.0;
+        for (int i = 0;i < N;i++) {
+            sum += a[i];
+        }
+        double average = sum/N;
+        return average;
+    }
+
+    // 复制数组
+    public static double[] duplicateArray(double[] a) {
+        int N = a.length;
+        double[] b = new double[N];
+        for (int i = 0; i < N; i++) {
+            b[i] = a[i];
+        }
+        return b; //如果打印数组，应该使用toString方法
     }
 }
